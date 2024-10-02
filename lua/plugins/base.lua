@@ -1,24 +1,4 @@
 return {
-	-- the colorscheme should be available when starting Neovim
-	{
-		"0xstepit/flow.nvim",
-		lazy = false, -- make sure we load this during startup if it is your main colorscheme
-		priority = 1000, -- make sure to load this before all the other start plugins
-		config = function()
-			require("flow").setup{
-				dark_theme = true, -- Set the theme with dark background.
-				high_contrast = false, -- Make the dark background darker or the light background lighter.
-				transparent = false, -- Set transparent background.
-				fluo_color = "pink", -- Color used as fluo. Available values are pink, yellow, orange, or green.
-				mode = "desaturate", -- Mode of the colors. Available values are: dark, bright, desaturate, or base.
-				aggressive_spell = false, -- Use colors for spell check.
-			}
-			-- load the colorscheme here
-			vim.cmd([[set termguicolors]])
-			-- vim.cmd([[let ayucolor="mirage"]])
-			vim.cmd([[colorscheme flow]])
-		end,
-	},
 	{
 		'nvim-telescope/telescope.nvim',
 		config = function()

@@ -40,3 +40,6 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
+
+-- Configure lovelace color theme
+require('themes/lovelace')
