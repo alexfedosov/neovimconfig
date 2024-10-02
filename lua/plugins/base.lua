@@ -62,4 +62,9 @@ return {
 			vim.keymap.set('n', '<C-b>', api.tree.toggle, { desc = 'Toggle file tree' })
 		end,
 	},
+	{
+		"vim-airline/vim-airline",
+		config = function()
+		end
+	},
 }
